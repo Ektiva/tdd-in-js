@@ -4,7 +4,7 @@ function add (input) {
         })
 }
 
-function substract (input) {
+function subtract (input) {
     try{
         return operation(input, function (result, input) {
             return result - input;
@@ -36,7 +36,7 @@ function modulo (input) {
 
 function exponential (input) {
     return operation(input, function (result, input) {
-        if(!Number.isFinite(result ** input) )
+        if(!Number.isFinite(result ** input))
         {
             return "Error"
         }
@@ -77,4 +77,4 @@ function operation(input, operator) {
 }
 
 
-module.exports = { add, substract, divide, multiple, modulo, exponential, operation}
+module.exports = { add, subtract, divide, multiple, modulo, exponential, operation}

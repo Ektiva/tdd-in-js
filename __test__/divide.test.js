@@ -1,3 +1,5 @@
+const base = require('../index');
+
 test('divide 1/1 to equal 1', () => {
     expect(base.divide([1,1])).toBe(1);
 })
