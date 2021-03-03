@@ -17,11 +17,11 @@ test(' 6 exponential 1 to equal 6', () => {
     expect(base.exponential([6,1])).toBe(6);
 })
 
-test('exponential 0 * 2 * 3 to equal 0', () => {
+test('exponential 0 ** 2 ** 3 to equal 0', () => {
     expect(base.exponential([0,2,3])).toBe(0);
 })
 
-test('exponential 2 * 2 * 3 to equal 64', () => {
+test('exponential 2 ** 2 ** 3 to equal 64', () => {
     expect(base.exponential([2,2,3])).toBe(64);
 })
 
@@ -37,10 +37,10 @@ test("exponential 2 strings '2' and '10' to return 20", () => {
     expect(base.exponential(['2', '10'])).toBe(1024);
 })
 
-test('multiply a string and a number to return a string 0100', () => {
+test('exponential a string and a number to return a string 0100', () => {
     expect(base.exponential(['3', 2])).toBe(9);
 })
 
-test('multiply a string and a number to return a string 0100', () => {
+test('exponential a string and a number to return a string 0100', () => {
     expect(base.exponential(['B', 100])).toBe("Error");
 })
